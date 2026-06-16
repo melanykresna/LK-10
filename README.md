@@ -9,10 +9,7 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-# Tampilan Halaman Utama
-<p align="center">
-    <img src="public/images/TampilanHalamanUtama.jpg" width="500" alt="Halaman Utama">
-</p>
+
 
 # LK-10
 Nama: Melany Kresna Putri<br>
