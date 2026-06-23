@@ -1,5 +1,3 @@
-
-
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
@@ -11,10 +9,19 @@
 
 
 
-# LK-10
+# LK-11
 Nama: Melany Kresna Putri<br>
 NIM: 24102015<br>
 Mata Kuliah: Pemrograman Web<br>
+
+## Fitur Tambahan & Perbaikan (LK-11)
+Pada tugas praktikum LK-11, dilakukan beberapa perbaikan bug (bug fixing) dan refactoring kode:
+- **Pembersihan Konflik Git**: Mengeliminasi penanda konflik git pada `README.md`.
+- **Keamanan Mass Assignment**: Mengganti penggunaan `$request->all()` dengan `$request->validated()` di controller mahasiswa untuk mencegah celah keamanan mass assignment.
+- **Pencegahan TypeError**: Menerapkan Route Model Binding untuk parameter route agar otomatis menghasilkan HTTP 404 (Not Found) jika parameter tidak valid, alih-alih TypeError HTTP 500.
+- **Visual Alert Error**: Menambahkan penampil error (`session('error')`) secara global pada layout utama `app.blade.php`.
+- **Deduplikasi Rute**: Menyederhanakan dan mengonsolidasikan rute-rute login pada `routes/web.php` menggunakan closure bersama.
+- **Enkapsulasi Validasi**: Mengekstrak aturan validasi ke Form Request (`StoreMahasiswaRequest` & `UpdateMahasiswaRequest`).
 
 ## Preview Aplikasi
 
@@ -32,6 +39,4 @@ Mata Kuliah: Pemrograman Web<br>
 
 ### Halaman API User
 <img src="public/image/API.png" width="500" alt="API User">
-
-=======
 
